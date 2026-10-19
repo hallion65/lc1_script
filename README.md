@@ -5,5 +5,6 @@ Custom script for using Behringer CMD LC-1 with Ableton
 Zkopíruj složku `CMD_LC1` do `User Library/Remote Scripts/` (Win: `Documents\Ableton\User Library\Remote Scripts`, Mac: `~/Music/Ableton/User Library/Remote Scripts`).
 V Live: Preferences > Link/Tempo/MIDI > Control Surface = `CMD_LC1`, Input/Output = LC-1.
 
-Knob (CC 1, kanál 1 – nastavíš v `CMD_LC1/CMD_LC1.py`) ovládá poslední použitý parametr.
-Pokud knob posílá relativní hodnoty, nastav `RELATIVE = True`.
+Enkodér na kanálu 5 ovládá poslední použitý parametr. Posílá CC 16; hodnota
+65 znamená otáčení doprava a 63 doleva. Nastavení najdeš v
+`CMD_LC1/CMD_LC1.py`. Každý krok změní parametr o `1/127` jeho rozsahu.
